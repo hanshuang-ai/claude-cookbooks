@@ -1,0 +1,898 @@
+# yaml-language-server: $schema=./.github/registry_schema.json
+
+# This registry defines the available Cookbooks on the Cookbook directory.
+# To add a cookbook, create a new entry
+- title: Prompting for Frontend Aesthethics
+  description: >
+    Claude can generate high-quality frontends, but without guidance it tends toward generic, conservative designs. This guide shows you how to prompt Claude to produce more distinctive, polished output.
+  path: coding/prompting_for_frontend_aesthetics.ipynb
+  slug: coding-prompting_for_frontend_aesthetics
+  category: Frontend
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/coding/prompting_for_frontend_aesthetics.ipynb
+  authors:
+  - rgb-prithvi
+  - Anthropic
+  date: '2025-10-21'
+- title: Classification with Claude
+  description: 'To complete the following guide you will need to install the following
+    packages: - anthropic - voyageai - pandas - matplotlib - sklearn - numpy'
+  path: capabilities/classification/guide.ipynb
+  slug: capabilities-classification-guide
+  category: capabilities
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/capabilities/classification/guide.ipynb
+  authors:
+  - Anthropic
+  date: '2024-05-19'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Enhancing RAG with Contextual Retrieval
+  description: '> Note: For more background information on Contextual Retrieval, including
+    additional performance evaluations on various datasets, we recommend reading our
+    accompanying  [blog post](https://www.anthropic.com/news/contextual-retrieval).'
+  path: capabilities/contextual-embeddings/guide.ipynb
+  slug: capabilities-contextual-embeddings-guide
+  category: capabilities
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/capabilities/contextual-embeddings/guide.ipynb
+  authors:
+  - Anthropic
+  date: '2024-09-13'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Retrieval Augmented Generation
+  description: Claude excels at a wide range of tasks, but it may struggle with queries
+    specific to your unique business context. This is where Retrieval Augmented Generation
+    (RAG) becomes invaluable. RAG enables Claude to leverage your internal knowledge
+    bases or ...
+  path: capabilities/retrieval_augmented_generation/guide.ipynb
+  slug: capabilities-retrieval-augmented-generation-guide
+  category: capabilities
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/capabilities/retrieval_augmented_generation/guide.ipynb
+  authors:
+  - Anthropic
+  date: '2024-07-02'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Summarization with Claude
+  description: Summarization is a crucial task in natural language processing that
+    involves condensing large amounts of text into shorter, more digestible formats
+    while retaining key information. In today's information-rich world, the ability
+    to quickly extract and...
+  path: capabilities/summarization/guide.ipynb
+  slug: capabilities-summarization-guide
+  category: capabilities
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/capabilities/summarization/guide.ipynb
+  authors:
+  - Anthropic
+  date: '2024-08-07'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Text to SQL with Claude
+  description: Text to SQL is a natural language processing task that converts human-readable
+    text queries into structured SQL queries. This lets users interact with databases
+    using natural language.
+  path: capabilities/text_to_sql/guide.ipynb
+  slug: capabilities-text-to-sql-guide
+  category: capabilities
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/capabilities/text_to_sql/guide.ipynb
+  authors:
+  - Anthropic
+  date: '2024-09-23'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: 00 - The One-Liner Research Agent
+  description: 'PREFACE: We highly recommend reading [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
+    or [How we built our multi-agent research system](https://www.anthropic.com/engineering/built-multi-agent-research-syste...'
+  path: claude_code_sdk/00_The_one_liner_research_agent.ipynb
+  slug: claude-code-sdk-00-the-one-liner-research-agent
+  category: claude_code_sdk
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/claude_code_sdk/00_The_one_liner_research_agent.ipynb
+  authors:
+  - Anthropic
+  date: '2025-09-12'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: 01 - The Chief of Staff Agent
+  description: 'In notebook 00, we built a simple research agent. In this notebook,
+    we''ll incrementally introduce key Claude Code SDK features for building comprehensive
+    agents. For each introduced feature, we''ll explain: - **What**: what the feature
+    is - **Why**: w...'
+  path: claude_code_sdk/01_The_chief_of_staff_agent.ipynb
+  slug: claude-code-sdk-01-the-chief-of-staff-agent
+  category: claude_code_sdk
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/claude_code_sdk/01_The_chief_of_staff_agent.ipynb
+  authors:
+  - Anthropic
+  date: '2025-09-12'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: 02 - The Observability Agent
+  description: 'In the previous notebooks we have built a basic research agent and
+    a Chief of Staff multi-agent framework. While the agents we have built are already
+    powerful, they were still limited in what they could do: the web search agent
+    is limited to searchin...'
+  path: claude_code_sdk/02_The_observability_agent.ipynb
+  slug: claude-code-sdk-02-the-observability-agent
+  category: claude_code_sdk
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/claude_code_sdk/02_The_observability_agent.ipynb
+  authors:
+  - Anthropic
+  date: '2025-09-12'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Extended Thinking
+  description: '- [Setup](#setup) - [Basic example](#basic-example) - [Streaming with
+    extended thinking](#streaming-with-extended-thinking) - [Token counting and context
+    window management](#token-counting-and-context-window-management) - [Understanding
+    redacted thin...'
+  path: extended_thinking/extended_thinking.ipynb
+  slug: extended-thinking-extended-thinking
+  category: extended_thinking
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/extended_thinking/extended_thinking.ipynb
+  authors:
+  - Anthropic
+  date: '2025-02-24'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Extended Thinking with Tool Use
+  description: '- [Setup](#setup) - [Basic example](#basic-example) - [Multiple tool
+    calls](#multiple-tool-calls-with-thinking) - [Preserving thinking blocks](#preserving-thinking-blocks)'
+  path: extended_thinking/extended_thinking_with_tool_use.ipynb
+  slug: extended-thinking-extended-thinking-with-tool-use
+  category: extended_thinking
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/extended_thinking/extended_thinking_with_tool_use.ipynb
+  authors:
+  - Anthropic
+  date: '2025-02-24'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Finetuning Claude 3 Haiku on Bedrock
+  description: In this notebook, we'll walk you through the process of finetuning
+    Claude 3 Haiku on Amazon Bedrock
+  path: finetuning/finetuning_on_bedrock.ipynb
+  slug: finetuning-finetuning-on-bedrock
+  category: finetuning
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/finetuning/finetuning_on_bedrock.ipynb
+  authors:
+  - Anthropic
+  date: '2024-08-19'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Batch Processing with Message Batches API
+  description: Message Batches allow you to process large volumes of Messages requests
+    asynchronously and cost-effectively. This cookbook demonstrates how to use the
+    Message Batches API to handle bulk operations while reducing costs by 50%.
+  path: misc/batch_processing.ipynb
+  slug: misc-batch-processing
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/batch_processing.ipynb
+  authors:
+  - Anthropic
+  date: '2024-10-08'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Building Evals
+  description: Optimizing Claude to give you the highest possible accuracy on a task
+    is an empirical science, and a process of continuous improvement. Whether you
+    are trying to know if a change to your prompt made the model perform better on
+    a key metric, or whethe...
+  path: misc/building_evals.ipynb
+  slug: misc-building-evals
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/building_evals.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-03'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Building a moderation filter with Claude
+  description: This guide will show you how to use Claude to build a content moderation
+    filter for user-generated text. The key idea is to define the moderation rules
+    and categories directly in the prompt, allowing for easy customization and experimentation.
+  path: misc/building_moderation_filter.ipynb
+  slug: misc-building-moderation-filter
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/building_moderation_filter.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-03'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Generate Synthetic Test Data for Your Prompt Template
+  description: 'Imagine you have a prompt roughly along these lines:'
+  path: misc/generate_test_cases.ipynb
+  slug: misc-generate-test-cases
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/generate_test_cases.ipynb
+  authors:
+  - Anthropic
+  date: '2024-08-16'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Prompting Claude for "JSON Mode"
+  description: Claude doesn't have a formal "JSON Mode" with constrained sampling.
+    But not to worry -- you can still get reliable JSON from Claude! This recipe will
+    show you how.
+  path: misc/how_to_enable_json_mode.ipynb
+  slug: misc-how-to-enable-json-mode
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/how_to_enable_json_mode.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-03'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: How to make SQL queries with Claude
+  description: In this notebook, we'll explore how to use Claude to generate SQL queries
+    based on natural language questions. We'll set up a test database, provide the
+    schema to Claude, and demonstrate how it can understand and translate human language
+    into SQL que...
+  path: misc/how_to_make_sql_queries.ipynb
+  slug: misc-how-to-make-sql-queries
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/how_to_make_sql_queries.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-03'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Illustrated Responses with Claude
+  description: 'In this recipe, we''ll show how to make an instantiation of Claude
+    that illustrates its responses by calling an image generation tool. We''ll do
+    this in three steps: 1. Connect to the Stable Diffusion API 2. Write a prompt
+    that explains to Claude how a...'
+  path: misc/illustrated_responses.ipynb
+  slug: misc-illustrated-responses
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/illustrated_responses.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-03'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Experimentally Testing Claude's Long-Context QA Abilities
+  description: '[DISCLAIMER: This notebook was created using Claude 2 models and is
+    considered legacy.]'
+  path: misc/mc_qa.ipynb
+  slug: misc-mc-qa
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/mc_qa.ipynb
+  authors:
+  - Anthropic
+  date: '2023-08-15'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Metaprompt
+  description: Welcome to the Metaprompt! This is a prompt engineering tool designed
+    to solve the "blank page problem" and give you a starting point for iteration.
+    All you need to do is enter your task, and optionally the names of the variables
+    you'd like Claude to...
+  path: misc/metaprompt.ipynb
+  slug: misc-metaprompt
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/metaprompt.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-18'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: '"Uploading" PDFs to Claude Via the API'
+  description: One really nice feature of [Claude.ai](https://www.claude.ai) is the
+    ability to upload PDFs. Let's mock up that feature in a notebook, and then test
+    it out by summarizing a long PDF.
+  path: misc/pdf_upload_summarization.ipynb
+  slug: misc-pdf-upload-summarization
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/pdf_upload_summarization.ipynb
+  authors:
+  - Anthropic
+  date: '2023-08-15'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Prompt caching through the Claude API
+  description: Prompt caching allows you to store and reuse context within your prompt.
+    This makes it more practical to include additional information in your prompt—such
+    as detailed instructions and example responses—which help improve every response
+    Claude genera...
+  path: misc/prompt_caching.ipynb
+  slug: misc-prompt-caching
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/prompt_caching.ipynb
+  authors:
+  - Anthropic
+  date: '2024-08-14'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Summarizing Web Page Content with Claude 3 Haiku
+  description: In this recipe, we'll learn how to fetch the content of a web page
+    given its URL and then use Anthropic's Claude API to generate a summary of the
+    page's content.
+  path: misc/read_web_pages_with_haiku.ipynb
+  slug: misc-read-web-pages-with-haiku
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/read_web_pages_with_haiku.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-13'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Sampling Responses from Claude Beyond the Max Tokens Limit
+  description: This notebook illustrates how to get Claude to give responses longer
+    than the maximum value of the max_tokens parameter by using a prefill with the
+    content of the previous message.
+  path: misc/sampling_past_max_tokens.ipynb
+  slug: misc-sampling-past-max-tokens
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/sampling_past_max_tokens.ipynb
+  authors:
+  - Anthropic
+  date: '2024-05-08'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Speculative Prompt Caching
+  description: This cookbook demonstrates "Speculative Prompt Caching" - a pattern
+    that reduces time-to-first-token (TTFT) by warming up the cache while users are
+    still formulating their queries.
+  path: misc/speculative_prompt_caching.ipynb
+  slug: misc-speculative-prompt-caching
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/speculative_prompt_caching.ipynb
+  authors:
+  - Anthropic
+  date: '2025-05-15'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Citations
+  description: The Claude API features citation support that enables Claude to provide
+    detailed citations when answering questions about documents. Citations are a valuable
+    affordance in many LLM powered applications to help users track and verify the
+    sources of in...
+  path: misc/using_citations.ipynb
+  slug: misc-using-citations
+  category: misc
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/misc/using_citations.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-14'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Best practices for using vision with Claude
+  description: Vision allows for a new mode of interaction with Claude. We’ve compiled
+    a few tips for getting the best performance on your images. Before we get to that,
+    let's first setup the code we need to run the notebook.
+  path: multimodal/best_practices_for_vision.ipynb
+  slug: multimodal-best-practices-for-vision
+  category: multimodal
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/multimodal/best_practices_for_vision.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-03'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Getting started - how to pass images into Claude
+  description: 'The Claude 3 model family supports image inputs in the API. Here’s
+    how you can pass images to Claude:'
+  path: multimodal/getting_started_with_vision.ipynb
+  slug: multimodal-getting-started-with-vision
+  category: multimodal
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/multimodal/getting_started_with_vision.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-03'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: How to transcribe documents with Claude
+  description: Claude 3 is great at reading unstructured text and information within
+    images and PDFs and turning it into structured text. We'll take a look at a few
+    examples but first let's setup the code we need to run the notebook.
+  path: multimodal/how_to_transcribe_text.ipynb
+  slug: multimodal-how-to-transcribe-text
+  category: multimodal
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/multimodal/how_to_transcribe_text.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-03'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Working with Charts, Graphs, and Slide Decks
+  description: Claude is highly capable of working with charts, graphs, and broader
+    slide decks. Depending on your use case, there are a number of tips and tricks
+    that you may want to take advantage of. This recipe will show you common patterns
+    for using Claude wit...
+  path: multimodal/reading_charts_graphs_powerpoints.ipynb
+  slug: multimodal-reading-charts-graphs-powerpoints
+  category: multimodal
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/multimodal/reading_charts_graphs_powerpoints.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-03'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Using Haiku as a sub-agent
+  description: In this recipe, we'll demonstrate how to analyze Apple's 2023 financial
+    earnings reports using Claude 3 Haiku sub-agent models to extract relevant information
+    from earnings release PDFs. We'll then use Claude 3 Opus to generate a response
+    to our ques...
+  path: multimodal/using_sub_agents.ipynb
+  slug: multimodal-using-sub-agents
+  category: multimodal
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/multimodal/using_sub_agents.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-13'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Usage & Cost Admin API Cookbook
+  description: '**A practical guide to programmatically accessing your Claude API
+    usage and cost data**'
+  path: observability/usage_cost_api.ipynb
+  slug: observability-usage-cost-api
+  category: observability
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/observability/usage_cost_api.ipynb
+  authors:
+  - Anthropic
+  date: '2025-08-18'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Basic Workflows
+  description: 'This notebook demonstrates three simple multi-LLM workflows. They
+    trade off cost or latency for potentially improved task performances:'
+  path: patterns/agents/basic_workflows.ipynb
+  slug: patterns-agents-basic-workflows
+  category: patterns
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/patterns/agents/basic_workflows.ipynb
+  authors:
+  - Anthropic
+  date: '2024-12-19'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Evaluator Optimizer
+  description: In this workflow, one LLM call generates a response while another provides
+    evaluation and feedback in a loop.
+  path: patterns/agents/evaluator_optimizer.ipynb
+  slug: patterns-agents-evaluator-optimizer
+  category: patterns
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/patterns/agents/evaluator_optimizer.ipynb
+  authors:
+  - Anthropic
+  date: '2024-12-19'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Orchestrator Workers
+  description: In this workflow, a central LLM dynamically breaks down tasks, delegates
+    them to worker LLMs, and synthesizes their results.
+  path: patterns/agents/orchestrator_workers.ipynb
+  slug: patterns-agents-orchestrator-workers
+  category: patterns
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/patterns/agents/orchestrator_workers.ipynb
+  authors:
+  - Anthropic
+  date: '2024-12-19'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Introduction to Claude Skills
+  description: Learn how to use Claude's Skills feature to create professional documents,
+    analyze data, and automate business workflows with Excel, PowerPoint, and PDF
+    generation.
+  path: skills/notebooks/01_skills_introduction.ipynb
+  slug: skills-notebooks-01-skills-introduction
+  category: skills
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/skills/notebooks/01_skills_introduction.ipynb
+  authors:
+  - Anthropic
+  date: '2025-10-14'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Claude Skills for Financial Applications
+  description: Build real-world financial dashboards, portfolio analytics, and automated
+    reporting workflows using Claude's Excel, PowerPoint, and PDF skills.
+  path: skills/notebooks/02_skills_financial_applications.ipynb
+  slug: skills-notebooks-02-skills-financial-applications
+  category: skills
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/skills/notebooks/02_skills_financial_applications.ipynb
+  authors:
+  - Anthropic
+  date: '2025-10-15'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Building Custom Skills for Claude
+  description: Learn how to create, deploy, and manage custom skills to extend Claude's
+    capabilities with your organization's specialized knowledge and workflows.
+  path: skills/notebooks/03_skills_custom_development.ipynb
+  slug: skills-notebooks-03-skills-custom-development
+  category: skills
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/skills/notebooks/03_skills_custom_development.ipynb
+  authors:
+  - Anthropic
+  date: '2025-10-15'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Transcribe an audio file with Deepgram & use Anthropic to prepare interview
+    questions!
+  description: '**Make a copy of this notebook into your own drive, and follow the
+    instructions below!** 🥳🥳🥳'
+  path: third_party/Deepgram/prerecorded_audio.ipynb
+  slug: third-party-deepgram-prerecorded-audio
+  category: third_party
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/third_party/Deepgram/prerecorded_audio.ipynb
+  authors:
+  - Anthropic
+  date: '2024-04-10'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: RAG Pipeline with LlamaIndex
+  description: In this notebook we will look into building Basic RAG Pipeline with
+    LlamaIndex. The pipeline has following steps.
+  path: third_party/LlamaIndex/Basic_RAG_With_LlamaIndex.ipynb
+  slug: third-party-llamaindex-basic-rag-with-llamaindex
+  category: third_party
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/third_party/LlamaIndex/Basic_RAG_With_LlamaIndex.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-01'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Multi-Document Agents
+  description: In this notebook we will look into Building RAG when you have a large
+    number of documents using `DocumentAgents` concept with `ReAct Agent`.
+  path: third_party/LlamaIndex/Multi_Document_Agents.ipynb
+  slug: third-party-llamaindex-multi-document-agents
+  category: third_party
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/third_party/LlamaIndex/Multi_Document_Agents.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-02'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Multi-Modal
+  description: In this notebook, we show how to use Anthropic MultiModal LLM class/abstraction
+    for image understanding/reasoning.
+  path: third_party/LlamaIndex/Multi_Modal.ipynb
+  slug: third-party-llamaindex-multi-modal
+  category: third_party
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/third_party/LlamaIndex/Multi_Modal.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-08'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: ReAct Agent
+  description: In this notebook we will look into creating ReAct Agent over tools.
+  path: third_party/LlamaIndex/ReAct_Agent.ipynb
+  slug: third-party-llamaindex-react-agent
+  category: third_party
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/third_party/LlamaIndex/ReAct_Agent.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-02'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: RouterQuery Engine
+  description: In this notebook we will look into `RouterQueryEngine` to route the
+    user queries to one of the available query engine tools. These tools can be different
+    indices/ query engine on same documents/ different documents.
+  path: third_party/LlamaIndex/Router_Query_Engine.ipynb
+  slug: third-party-llamaindex-router-query-engine
+  category: third_party
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/third_party/LlamaIndex/Router_Query_Engine.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-01'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: SubQuestionQueryEngine
+  description: Often, we encounter scenarios where our queries span across multiple
+    documents.
+  path: third_party/LlamaIndex/SubQuestion_Query_Engine.ipynb
+  slug: third-party-llamaindex-subquestion-query-engine
+  category: third_party
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/third_party/LlamaIndex/SubQuestion_Query_Engine.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-01'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: How to Build A RAG System Using Claude 3 And MongoDB
+  description: 'This tutorial implements a chatbot prompted to take on the role of
+    a Venture capital tech Analyst. The chatbot is a naive RAG system with a collection
+    of tech news articles acting as its knowledge source. This notebook covers the
+    following:'
+  path: third_party/MongoDB/rag_using_mongodb.ipynb
+  slug: third-party-mongodb-rag-using-mongodb
+  category: third_party
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/third_party/MongoDB/rag_using_mongodb.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-06'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Claude 3 RAG Agents with LangChain v1
+  description: LangChain v1 brought a lot of changes and when comparing the LangChain
+    of versions `0.0.3xx` to `0.1.x` there's plenty of changes to the preferred way
+    of doing things. That is very much the case for agents.
+  path: third_party/Pinecone/claude_3_rag_agent.ipynb
+  slug: third-party-pinecone-claude-3-rag-agent
+  category: third_party
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/third_party/Pinecone/claude_3_rag_agent.ipynb
+  authors:
+  - Anthropic
+  date: '2024-03-14'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Retrieval-Augmented Generation using Pinecone
+  description: 'This notebook demonstrates how to connect Claude with the data in
+    your Pinecone vector database through a technique called retrieval-augmented generation
+    (RAG). We will cover the following steps:'
+  path: third_party/Pinecone/rag_using_pinecone.ipynb
+  slug: third-party-pinecone-rag-using-pinecone
+  category: third_party
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/third_party/Pinecone/rag_using_pinecone.ipynb
+  authors:
+  - Anthropic
+  date: '2024-02-18'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Iteratively Searching Wikipedia with Claude
+  description: '[DISCLAIMER: This notebook was created using Claude 2 models and is
+    considered legacy.]'
+  path: third_party/Wikipedia/wikipedia-search-cookbook.ipynb
+  slug: third-party-wikipedia-wikipedia-search-cookbook
+  category: third_party
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/third_party/Wikipedia/wikipedia-search-cookbook.ipynb
+  authors:
+  - Anthropic
+  date: '2023-08-15'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Using the Wolfram Alpha LLM API as a Tool with Claude
+  description: In this recipe, we'll show you how to integrate the Wolfram Alpha LLM
+    API as a tool for Claude to use. Claude will be able to send queries to the Wolfram
+    Alpha API and receive computed responses, which it can then use to provide answers
+    to user quest...
+  path: third_party/WolframAlpha/using_llm_api.ipynb
+  slug: third-party-wolframalpha-using-llm-api
+  category: third_party
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/third_party/WolframAlpha/using_llm_api.ipynb
+  authors:
+  - Anthropic
+  date: '2024-04-03'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Tool Evaluation
+  description: Multiple agents independently run a single evaluation task from an
+    evaluation file.
+  path: tool_evaluation/tool_evaluation.ipynb
+  slug: tool-evaluation-tool-evaluation
+  category: tool_evaluation
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/tool_evaluation/tool_evaluation.ipynb
+  authors:
+  - Anthropic
+  date: '2025-09-10'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Using a Calculator Tool with Claude
+  description: In this recipe, we'll demonstrate how to provide Claude with a simple
+    calculator tool that it can use to perform arithmetic operations based on user
+    input. We'll define the calculator tool and show how Claude can interact with
+    it to solve mathematica...
+  path: tool_use/calculator_tool.ipynb
+  slug: tool-use-calculator-tool
+  category: tool_use
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/tool_use/calculator_tool.ipynb
+  authors:
+  - Anthropic
+  date: '2024-04-03'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Creating a Customer Service Agent with Client-Side Tools
+  description: In this recipe, we'll demonstrate how to create a customer service
+    chatbot using Claude 3 plus client-side tools. The chatbot will be able to look
+    up customer information, retrieve order details, and cancel orders on behalf of
+    the customer. We'll def...
+  path: tool_use/customer_service_agent.ipynb
+  slug: tool-use-customer-service-agent
+  category: tool_use
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/tool_use/customer_service_agent.ipynb
+  authors:
+  - Anthropic
+  date: '2024-04-03'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Extracting Structured JSON using Claude and Tool Use
+  description: In this cookbook, we'll explore various examples of using Claude and
+    the tool use feature to extract structured JSON data from different types of input.
+    We'll define custom tools that prompt Claude to generate well-structured JSON
+    output for tasks su...
+  path: tool_use/extracting_structured_json.ipynb
+  slug: tool-use-extracting-structured-json
+  category: tool_use
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/tool_use/extracting_structured_json.ipynb
+  authors:
+  - Anthropic
+  date: '2024-04-03'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Memory & Context Management with Claude Sonnet 4.5
+  description: Learn how to build AI agents that learn and improve across conversations
+    using Claude's memory tool and context editing capabilities.
+  path: tool_use/memory_cookbook.ipynb
+  slug: tool-use-memory-cookbook
+  category: tool_use
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/tool_use/memory_cookbook.ipynb
+  authors:
+  - Anthropic
+  date: '2025-05-22'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Parallel tool calls on Claude 3.7 Sonnet
+  description: Claude 3.7 Sonnet may be less likely to make make parallel tool calls
+    in a response, even when you have not set `disable_parallel_tool_use`. To work
+    around this, we recommend introducing a "batch tool" that can act as a meta-tool
+    to wrap invocations ...
+  path: tool_use/parallel_tools_claude_3_7_sonnet.ipynb
+  slug: tool-use-parallel-tools-claude-3-7-sonnet
+  category: tool_use
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/tool_use/parallel_tools_claude_3_7_sonnet.ipynb
+  authors:
+  - Anthropic
+  date: '2025-03-05'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Tool choice
+  description: Tool use supports a parameter called `tool_choice` that allows you
+    to specify how you want Claude to call tools. In this notebook, we'll take a look
+    at how it works and when to use it. Before going any further, make sure you are
+    comfortable with the ...
+  path: tool_use/tool_choice.ipynb
+  slug: tool-use-tool-choice
+  category: tool_use
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/tool_use/tool_choice.ipynb
+  authors:
+  - Anthropic
+  date: '2024-05-15'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Note-Saving Tool with Pydantic and Anthropic Tool Use
+  description: In this example, we'll create a tool that saves a note with the author
+    and metadata, and use Pydantic to validate the model's response when calling the
+    tool. We'll define the necessary Pydantic models, process the tool call, and ensure
+    that the model...
+  path: tool_use/tool_use_with_pydantic.ipynb
+  slug: tool-use-tool-use-with-pydantic
+  category: tool_use
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/tool_use/tool_use_with_pydantic.ipynb
+  authors:
+  - Anthropic
+  date: '2024-04-12'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
+- title: Using Vision with Tools
+  description: In this recipe, we'll demonstrate how to combine Vision with tool use
+    to analyze an image of a nutrition label and extract structured nutrition information
+    using a custom tool.
+  path: tool_use/vision_with_tools.ipynb
+  slug: tool-use-vision-with-tools
+  category: tool_use
+  github_url: https://github.com/anthropics/claude-cookbooks/blob/main/tool_use/vision_with_tools.ipynb
+  authors:
+  - Anthropic
+  date: '2024-05-15'
+  tags: []
+  difficulty: ''
+  use_case: ''
+  thumbnail: ''
