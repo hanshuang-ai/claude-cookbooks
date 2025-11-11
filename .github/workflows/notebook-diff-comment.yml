@@ -74,7 +74,11 @@ jobs:
             echo '```diff' >> diff_comment.md
 
             # Generate diff (suppress errors if file doesn't exist in base)
-            uvx --from nbdime nbdiff --no-color $BASE_SHA $HEAD_SHA "$notebook" 2>/dev/null >> diff_comment.md || echo "New file" >> diff_comment.md
+            # Ignore metadata, attachments, IDs, and other non-content changes
+            uvx --from nbdime nbdiff --no-color \
+              --ignore-attachments --ignore-metadata \
+              --ignore-identifiers --ignore-details \
+              $BASE_SHA $HEAD_SHA "$notebook" 2>/dev/null >> diff_comment.md || echo "New file" >> diff_comment.md
 
             echo '```' >> diff_comment.md
             echo "" >> diff_comment.md
