@@ -1,350 +1,309 @@
 - title: Prompting for Frontend Aesthethics
-  description: 'Claude can generate high-quality frontends, but without guidance it
-    tends toward generic, conservative designs. This guide shows you how to prompt
-    Claude to produce more distinctive, polished output.
-
-    '
+  description: Guide to prompting Claude for distinctive, polished frontend designs
+    avoiding generic aesthetics.
   path: coding/prompting_for_frontend_aesthetics.ipynb
   category: Frontend
   authors:
   - rgb-prithvi
   date: '2025-10-21'
 - title: Classification with Claude
-  description: 'To complete the following guide you will need to install the following
-    packages: - anthropic - voyageai - pandas - matplotlib - sklearn - numpy'
+  description: Build classification systems with Claude using RAG and chain-of-thought
+    for insurance tickets.
   path: capabilities/classification/guide.ipynb
   category: capabilities
   authors:
   - GarvanD
   date: '2024-05-19'
 - title: Enhancing RAG with Contextual Retrieval
-  description: '> Note: For more background information on Contextual Retrieval, including
-    additional performance evaluations on various datasets, we recommend reading our
-    accompanying  [blog post](https://www.anthropic.com/news/contextual-retrieval).'
+  description: Improve RAG accuracy by adding context to chunks before embedding
+    with prompt caching.
   path: capabilities/contextual-embeddings/guide.ipynb
   category: capabilities
   authors:
   - Anthropic
   date: '2024-09-13'
 - title: Retrieval Augmented Generation
-  description: Claude excels at a wide range of tasks, but it may struggle with queries
-    specific to your unique business context. This is where Retrieval Augmented Generation
-    (RAG) becomes invaluable. RAG enables Claude to leverage your internal knowledge
-    bases or ...
+  description: Build and optimize RAG systems with Claude using summary indexing
+    and reranking techniques.
   path: capabilities/retrieval_augmented_generation/guide.ipynb
   category: capabilities
   authors:
   - Anthropic
   date: '2024-07-02'
 - title: Summarization with Claude
-  description: Summarization is a crucial task in natural language processing that
-    involves condensing large amounts of text into shorter, more digestible formats
-    while retaining key information. In today's information-rich world, the ability
-    to quickly extract and...
+  description: Comprehensive guide to summarizing legal documents with evaluation and
+    advanced techniques.
   path: capabilities/summarization/guide.ipynb
   category: capabilities
   authors:
   - Briiick
   date: '2024-08-07'
 - title: Text to SQL with Claude
-  description: Text to SQL is a natural language processing task that converts human-readable
-    text queries into structured SQL queries. This lets users interact with databases
-    using natural language.
+  description: Convert natural language queries to SQL using RAG, chain-of-thought,
+    and self-improvement techniques.
   path: capabilities/text_to_sql/guide.ipynb
   category: capabilities
   authors:
   - maheshmurag
   date: '2024-09-23'
 - title: 00 - The One-Liner Research Agent
-  description: 'PREFACE: We highly recommend reading [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
-    or [How we built our multi-agent research system](https://www.anthropic.com/engineering/built-multi-agent-research-syste...'
+  description: Build a research agent using Claude Code SDK with WebSearch for autonomous
+    research.
   path: claude_code_sdk/00_The_one_liner_research_agent.ipynb
   category: claude_code_sdk
   authors:
   - JiriDeJonghe
   date: '2025-09-12'
 - title: 01 - The Chief of Staff Agent
-  description: 'In notebook 00, we built a simple research agent. In this notebook,
-    we''ll incrementally introduce key Claude Code SDK features for building comprehensive
-    agents. For each introduced feature, we''ll explain: - **What**: what the feature
-    is - **Why**: w...'
+  description: Build multi-agent systems with subagents, hooks, output styles, and
+    plan mode features.
   path: claude_code_sdk/01_The_chief_of_staff_agent.ipynb
   category: claude_code_sdk
   authors:
   - JiriDeJonghe
   date: '2025-09-12'
 - title: 02 - The Observability Agent
-  description: 'In the previous notebooks we have built a basic research agent and
-    a Chief of Staff multi-agent framework. While the agents we have built are already
-    powerful, they were still limited in what they could do: the web search agent
-    is limited to searchin...'
+  description: Connect agents to external systems via MCP servers for GitHub monitoring
+    and CI workflows.
   path: claude_code_sdk/02_The_observability_agent.ipynb
   category: claude_code_sdk
   authors:
   - JiriDeJonghe
   date: '2025-09-12'
 - title: Extended Thinking
-  description: '- [Setup](#setup) - [Basic example](#basic-example) - [Streaming with
-    extended thinking](#streaming-with-extended-thinking) - [Token counting and context
-    window management](#token-counting-and-context-window-management) - [Understanding
-    redacted thin...'
+  description: Use Claude's extended thinking for transparent step-by-step reasoning
+    with budget management.
   path: extended_thinking/extended_thinking.ipynb
   category: extended_thinking
   authors:
   - alexalbertt
   date: '2025-02-24'
 - title: Extended Thinking with Tool Use
-  description: '- [Setup](#setup) - [Basic example](#basic-example) - [Multiple tool
-    calls](#multiple-tool-calls-with-thinking) - [Preserving thinking blocks](#preserving-thinking-blocks)'
+  description: Combine extended thinking with tools for transparent reasoning during
+    multi-step workflows.
   path: extended_thinking/extended_thinking_with_tool_use.ipynb
   category: extended_thinking
   authors:
   - alexalbertt
   date: '2025-02-24'
 - title: Finetuning Claude 3 Haiku on Bedrock
-  description: In this notebook, we'll walk you through the process of finetuning
-    Claude 3 Haiku on Amazon Bedrock
+  description: Step-by-step guide to finetuning Claude 3 Haiku on Amazon Bedrock for
+    custom tasks.
   path: finetuning/finetuning_on_bedrock.ipynb
   category: finetuning
   authors:
   - davidhershey
   date: '2024-08-19'
 - title: Batch Processing with Message Batches API
-  description: Message Batches allow you to process large volumes of Messages requests
-    asynchronously and cost-effectively. This cookbook demonstrates how to use the
-    Message Batches API to handle bulk operations while reducing costs by 50%.
+  description: Process large volumes of Claude requests asynchronously with 50% cost
+    reduction using batches.
   path: misc/batch_processing.ipynb
   category: misc
   authors:
   - alexalbertt
   date: '2024-10-08'
 - title: Building Evals
-  description: Optimizing Claude to give you the highest possible accuracy on a task
-    is an empirical science, and a process of continuous improvement. Whether you
-    are trying to know if a change to your prompt made the model perform better on
-    a key metric, or whethe...
+  description: Build robust evaluation systems to measure and improve Claude's performance
+    on key metrics.
   path: misc/building_evals.ipynb
   category: misc
   authors:
   - alexalbertt
   date: '2024-03-03'
 - title: Building a moderation filter with Claude
-  description: This guide will show you how to use Claude to build a content moderation
-    filter for user-generated text. The key idea is to define the moderation rules
-    and categories directly in the prompt, allowing for easy customization and experimentation.
+  description: Build customizable content moderation filters by defining rules and
+    categories in prompts.
   path: misc/building_moderation_filter.ipynb
   category: misc
   authors:
   - alexalbertt
   date: '2024-03-03'
 - title: Generate Synthetic Test Data for Your Prompt Template
-  description: 'Imagine you have a prompt roughly along these lines:'
+  description: Generate synthetic test cases to evaluate and improve your Claude prompt
+    templates effectively.
   path: misc/generate_test_cases.ipynb
   category: misc
   authors:
   - Anthropic
   date: '2024-08-16'
 - title: Prompting Claude for "JSON Mode"
-  description: Claude doesn't have a formal "JSON Mode" with constrained sampling.
-    But not to worry -- you can still get reliable JSON from Claude! This recipe will
-    show you how.
+  description: Get reliable JSON output from Claude using effective prompting techniques
+    without constrained sampling.
   path: misc/how_to_enable_json_mode.ipynb
   category: misc
   authors:
   - alexalbertt
   date: '2024-03-03'
 - title: How to make SQL queries with Claude
-  description: In this notebook, we'll explore how to use Claude to generate SQL queries
-    based on natural language questions. We'll set up a test database, provide the
-    schema to Claude, and demonstrate how it can understand and translate human language
-    into SQL que...
+  description: Generate SQL queries from natural language questions using Claude with
+    database schema context.
   path: misc/how_to_make_sql_queries.ipynb
   category: misc
   authors:
   - alexalbertt
   date: '2024-03-03'
 - title: Illustrated Responses with Claude
-  description: 'In this recipe, we''ll show how to make an instantiation of Claude
-    that illustrates its responses by calling an image generation tool. We''ll do
-    this in three steps: 1. Connect to the Stable Diffusion API 2. Write a prompt
-    that explains to Claude how a...'
+  description: Create Claude responses illustrated with images using Stable Diffusion
+    API tool integration.
   path: misc/illustrated_responses.ipynb
   category: misc
   authors:
   - alexalbertt
   date: '2024-03-03'
 - title: Experimentally Testing Claude's Long-Context QA Abilities
-  description: '[DISCLAIMER: This notebook was created using Claude 2 models and is
-    considered legacy.]'
+  description: Legacy notebook testing Claude 2's long-context question answering performance
+    and evaluation methods.
   path: misc/mc_qa.ipynb
   category: misc
   authors:
   - Anthropic
   date: '2023-08-15'
 - title: Metaprompt
-  description: Welcome to the Metaprompt! This is a prompt engineering tool designed
-    to solve the "blank page problem" and give you a starting point for iteration.
-    All you need to do is enter your task, and optionally the names of the variables
-    you'd like Claude to...
+  description: Prompt engineering tool that generates starting prompts for your tasks
+    to solve blank-page problem.
   path: misc/metaprompt.ipynb
   category: misc
   authors:
   - Anthropic
   date: '2024-03-18'
 - title: '"Uploading" PDFs to Claude Via the API'
-  description: One really nice feature of [Claude.ai](https://www.claude.ai) is the
-    ability to upload PDFs. Let's mock up that feature in a notebook, and then test
-    it out by summarizing a long PDF.
+  description: Process and summarize PDF documents using Claude API with text extraction
+    and encoding.
   path: misc/pdf_upload_summarization.ipynb
   category: misc
   authors:
   - Anthropic
   date: '2023-08-15'
 - title: Prompt caching through the Claude API
-  description: Prompt caching allows you to store and reuse context within your prompt.
-    This makes it more practical to include additional information in your prompt—such
-    as detailed instructions and example responses—which help improve every response
-    Claude genera...
+  description: Cache and reuse prompt context for cost savings and faster responses
+    with detailed instructions.
   path: misc/prompt_caching.ipynb
   category: misc
   authors:
   - alexalbertt
   date: '2024-08-14'
 - title: Summarizing Web Page Content with Claude 3 Haiku
-  description: In this recipe, we'll learn how to fetch the content of a web page
-    given its URL and then use Anthropic's Claude API to generate a summary of the
-    page's content.
+  description: Fetch and summarize web page content using Claude 3 Haiku via URL
+    extraction.
   path: misc/read_web_pages_with_haiku.ipynb
   category: misc
   authors:
   - alexalbertt
   date: '2024-03-13'
 - title: Sampling Responses from Claude Beyond the Max Tokens Limit
-  description: This notebook illustrates how to get Claude to give responses longer
-    than the maximum value of the max_tokens parameter by using a prefill with the
-    content of the previous message.
+  description: Generate longer responses beyond max_tokens limit using prefill technique
+    with message continuation.
   path: misc/sampling_past_max_tokens.ipynb
   category: misc
   authors:
   - Anthropic
   date: '2024-05-08'
 - title: Speculative Prompt Caching
-  description: This cookbook demonstrates "Speculative Prompt Caching" - a pattern
-    that reduces time-to-first-token (TTFT) by warming up the cache while users are
-    still formulating their queries.
+  description: Reduce time-to-first-token by warming cache speculatively while users
+    formulate their queries.
   path: misc/speculative_prompt_caching.ipynb
   category: misc
   authors:
   - Anthropic
   date: '2025-05-15'
 - title: Citations
-  description: The Claude API features citation support that enables Claude to provide
-    detailed citations when answering questions about documents. Citations are a valuable
-    affordance in many LLM powered applications to help users track and verify the
-    sources of in...
+  description: Enable Claude to provide detailed source citations when answering document-based
+    questions for verification.
   path: misc/using_citations.ipynb
   category: misc
   authors:
   - Anthropic
   date: '2024-03-14'
 - title: Best practices for using vision with Claude
-  description: Vision allows for a new mode of interaction with Claude. We’ve compiled
-    a few tips for getting the best performance on your images. Before we get to that,
-    let's first setup the code we need to run the notebook.
+  description: Tips and techniques for optimal image processing performance with Claude's
+    vision capabilities.
   path: multimodal/best_practices_for_vision.ipynb
   category: multimodal
   authors:
   - alexalbertt
-  date: '2024-03-03'
+  date: '2024-05-08'
 - title: Getting started - how to pass images into Claude
-  description: 'The Claude 3 model family supports image inputs in the API. Here’s
-    how you can pass images to Claude:'
+  description: Tutorial on passing images to Claude 3 API for vision-based text analysis.
   path: multimodal/getting_started_with_vision.ipynb
   category: multimodal
   authors:
   - alexalbertt
   date: '2024-03-03'
 - title: How to transcribe documents with Claude
-  description: Claude 3 is great at reading unstructured text and information within
-    images and PDFs and turning it into structured text. We'll take a look at a few
-    examples but first let's setup the code we need to run the notebook.
+  description: Extract and structure unstructured text from images and PDFs using Claude
+    3's vision.
   path: multimodal/how_to_transcribe_text.ipynb
   category: multimodal
   authors:
   - alexalbertt
   date: '2024-03-03'
 - title: Working with Charts, Graphs, and Slide Decks
-  description: Claude is highly capable of working with charts, graphs, and broader
-    slide decks. Depending on your use case, there are a number of tips and tricks
-    that you may want to take advantage of. This recipe will show you common patterns
-    for using Claude wit...
+  description: Extract insights from charts, graphs, and presentations using Claude's vision
+    analysis capabilities.
   path: multimodal/reading_charts_graphs_powerpoints.ipynb
   category: multimodal
   authors:
   - alexalbertt
   date: '2024-03-03'
 - title: Using Haiku as a sub-agent
-  description: In this recipe, we'll demonstrate how to analyze Apple's 2023 financial
-    earnings reports using Claude 3 Haiku sub-agent models to extract relevant information
-    from earnings release PDFs. We'll then use Claude 3 Opus to generate a response
-    to our ques...
+  description: Analyze financial reports using Haiku sub-agents for extraction and Opus
+    for synthesis.
   path: multimodal/using_sub_agents.ipynb
   category: multimodal
   authors:
   - alexalbertt
   date: '2024-03-13'
 - title: Usage & Cost Admin API Cookbook
-  description: '**A practical guide to programmatically accessing your Claude API
-    usage and cost data**'
+  description: Programmatically access and analyze your Claude API usage and cost data
+    via Admin API.
   path: observability/usage_cost_api.ipynb
   category: observability
   authors:
   - Anthropic
   date: '2025-08-18'
 - title: Basic Workflows
-  description: 'This notebook demonstrates three simple multi-LLM workflows. They
-    trade off cost or latency for potentially improved task performances:'
+  description: Three simple multi-LLM workflow patterns trading cost or latency for
+    improved performance.
   path: patterns/agents/basic_workflows.ipynb
   category: patterns
   authors:
   - Anthropic
   date: '2024-12-19'
 - title: Evaluator Optimizer
-  description: In this workflow, one LLM call generates a response while another provides
-    evaluation and feedback in a loop.
+  description: Workflow pattern using one LLM for generation and another for evaluation
+    feedback loop.
   path: patterns/agents/evaluator_optimizer.ipynb
   category: patterns
   authors:
   - Anthropic
   date: '2024-12-19'
 - title: Orchestrator Workers
-  description: In this workflow, a central LLM dynamically breaks down tasks, delegates
-    them to worker LLMs, and synthesizes their results.
+  description: Central LLM dynamically delegates tasks to worker LLMs and synthesizes
+    their combined results.
   path: patterns/agents/orchestrator_workers.ipynb
   category: patterns
   authors:
   - Anthropic
   date: '2024-12-19'
 - title: Introduction to Claude Skills
-  description: Learn how to use Claude's Skills feature to create professional documents,
-    analyze data, and automate business workflows with Excel, PowerPoint, and PDF
-    generation.
+  description: Create documents, analyze data, automate workflows with Claude's Excel,
+    PowerPoint, PDF skills.
   path: skills/notebooks/01_skills_introduction.ipynb
   category: skills
   authors:
   - Anthropic
   date: '2025-10-14'
 - title: Claude Skills for Financial Applications
-  description: Build real-world financial dashboards, portfolio analytics, and automated
-    reporting workflows using Claude's Excel, PowerPoint, and PDF skills.
+  description: Build financial dashboards and portfolio analytics using Claude's Excel,
+    PowerPoint, PDF skills.
   path: skills/notebooks/02_skills_financial_applications.ipynb
   category: skills
   authors:
   - Anthropic
   date: '2025-10-15'
 - title: Building Custom Skills for Claude
-  description: Learn how to create, deploy, and manage custom skills to extend Claude's
-    capabilities with your organization's specialized knowledge and workflows.
+  description: Create, deploy, and manage custom skills extending Claude with specialized
+    organizational workflows.
   path: skills/notebooks/03_skills_custom_development.ipynb
   category: skills
   authors:
@@ -352,187 +311,168 @@
   date: '2025-10-15'
 - title: Transcribe an audio file with Deepgram & use Anthropic to prepare interview
     questions!
-  description: '**Make a copy of this notebook into your own drive, and follow the
-    instructions below!** 🥳🥳🥳'
+  description: Transcribe audio with Deepgram and generate interview questions using
+    Claude for preparation.
   path: third_party/Deepgram/prerecorded_audio.ipynb
   category: third_party
   authors:
   - john-vajda
   date: '2024-04-10'
 - title: RAG Pipeline with LlamaIndex
-  description: In this notebook we will look into building Basic RAG Pipeline with
-    LlamaIndex. The pipeline has following steps.
+  description: Build basic RAG pipeline with LlamaIndex for document retrieval and question
+    answering.
   path: third_party/LlamaIndex/Basic_RAG_With_LlamaIndex.ipynb
   category: third_party
   authors:
   - ravi03071991
   date: '2024-03-01'
 - title: Multi-Document Agents
-  description: In this notebook we will look into Building RAG when you have a large
-    number of documents using `DocumentAgents` concept with `ReAct Agent`.
+  description: Build RAG for large document collections using DocumentAgents with ReAct
+    Agent pattern.
   path: third_party/LlamaIndex/Multi_Document_Agents.ipynb
   category: third_party
   authors:
   - ravi03071991
   date: '2024-03-02'
 - title: Multi-Modal
-  description: In this notebook, we show how to use Anthropic MultiModal LLM class/abstraction
-    for image understanding/reasoning.
+  description: Use LlamaIndex's Anthropic MultiModal LLM abstraction for image understanding
+    and reasoning.
   path: third_party/LlamaIndex/Multi_Modal.ipynb
   category: third_party
   authors:
   - ravi03071991
   date: '2024-03-08'
 - title: ReAct Agent
-  description: In this notebook we will look into creating ReAct Agent over tools.
+  description: Create ReAct agents with LlamaIndex for tool-based reasoning and action
+    workflows.
   path: third_party/LlamaIndex/ReAct_Agent.ipynb
   category: third_party
   authors:
   - ravi03071991
   date: '2024-03-02'
 - title: RouterQuery Engine
-  description: In this notebook we will look into `RouterQueryEngine` to route the
-    user queries to one of the available query engine tools. These tools can be different
-    indices/ query engine on same documents/ different documents.
+  description: Route queries to different indices using LlamaIndex RouterQueryEngine for
+    multi-document search.
   path: third_party/LlamaIndex/Router_Query_Engine.ipynb
   category: third_party
   authors:
   - ravi03071991
   date: '2024-03-01'
 - title: SubQuestionQueryEngine
-  description: Often, we encounter scenarios where our queries span across multiple
-    documents.
+  description: Decompose complex queries into sub-questions across multiple documents
+    using LlamaIndex engine.
   path: third_party/LlamaIndex/SubQuestion_Query_Engine.ipynb
   category: third_party
   authors:
   - ravi03071991
   date: '2024-03-01'
 - title: How to Build A RAG System Using Claude 3 And MongoDB
-  description: 'This tutorial implements a chatbot prompted to take on the role of
-    a Venture capital tech Analyst. The chatbot is a naive RAG system with a collection
-    of tech news articles acting as its knowledge source. This notebook covers the
-    following:'
+  description: Build chatbot RAG system with Claude and MongoDB using tech news as
+    knowledge base.
   path: third_party/MongoDB/rag_using_mongodb.ipynb
   category: third_party
   authors:
   - richmond-alake
   date: '2024-03-06'
 - title: Claude 3 RAG Agents with LangChain v1
-  description: LangChain v1 brought a lot of changes and when comparing the LangChain
-    of versions `0.0.3xx` to `0.1.x` there's plenty of changes to the preferred way
-    of doing things. That is very much the case for agents.
+  description: Build RAG agents with Claude 3 using LangChain v1's updated agent framework
+    patterns.
   path: third_party/Pinecone/claude_3_rag_agent.ipynb
   category: third_party
   authors:
   - james-briggs
   date: '2024-03-14'
 - title: Retrieval-Augmented Generation using Pinecone
-  description: 'This notebook demonstrates how to connect Claude with the data in
-    your Pinecone vector database through a technique called retrieval-augmented generation
-    (RAG). We will cover the following steps:'
+  description: Connect Claude with Pinecone vector database for retrieval-augmented generation
+    and semantic search.
   path: third_party/Pinecone/rag_using_pinecone.ipynb
   category: third_party
   authors:
   - alexalbertt
   date: '2024-02-18'
 - title: Iteratively Searching Wikipedia with Claude
-  description: '[DISCLAIMER: This notebook was created using Claude 2 models and is
-    considered legacy.]'
+  description: Legacy notebook showing iterative Wikipedia searches with Claude 2 for
+    research workflows.
   path: third_party/Wikipedia/wikipedia-search-cookbook.ipynb
   category: third_party
   authors:
   - Anthropic
   date: '2023-08-15'
 - title: Using the Wolfram Alpha LLM API as a Tool with Claude
-  description: In this recipe, we'll show you how to integrate the Wolfram Alpha LLM
-    API as a tool for Claude to use. Claude will be able to send queries to the Wolfram
-    Alpha API and receive computed responses, which it can then use to provide answers
-    to user quest...
+  description: Integrate Wolfram Alpha LLM API as Claude tool for computational queries
+    and answers.
   path: third_party/WolframAlpha/using_llm_api.ipynb
   category: third_party
   authors:
   - alexalbertt
   date: '2024-04-03'
 - title: Tool Evaluation
-  description: Multiple agents independently run a single evaluation task from an
-    evaluation file.
+  description: Run parallel agent evaluations on tools independently from evaluation
+    task files.
   path: tool_evaluation/tool_evaluation.ipynb
   category: tool_evaluation
   authors:
   - Anthropic
   date: '2025-09-10'
 - title: Using a Calculator Tool with Claude
-  description: In this recipe, we'll demonstrate how to provide Claude with a simple
-    calculator tool that it can use to perform arithmetic operations based on user
-    input. We'll define the calculator tool and show how Claude can interact with
-    it to solve mathematica...
+  description: Provide Claude with calculator tool for arithmetic operations and mathematical
+    problem solving.
   path: tool_use/calculator_tool.ipynb
   category: tool_use
   authors:
   - alexalbertt
   date: '2024-04-03'
 - title: Creating a Customer Service Agent with Client-Side Tools
-  description: In this recipe, we'll demonstrate how to create a customer service
-    chatbot using Claude 3 plus client-side tools. The chatbot will be able to look
-    up customer information, retrieve order details, and cancel orders on behalf of
-    the customer. We'll def...
+  description: Build customer service chatbot with Claude using tools for customer lookup
+    and order management.
   path: tool_use/customer_service_agent.ipynb
   category: tool_use
   authors:
   - alexalbertt
   date: '2024-04-03'
 - title: Extracting Structured JSON using Claude and Tool Use
-  description: In this cookbook, we'll explore various examples of using Claude and
-    the tool use feature to extract structured JSON data from different types of input.
-    We'll define custom tools that prompt Claude to generate well-structured JSON
-    output for tasks su...
+  description: Extract structured JSON data from various inputs using Claude's tool
+    use capabilities.
   path: tool_use/extracting_structured_json.ipynb
   category: tool_use
   authors:
   - alexalbertt
   date: '2024-04-03'
 - title: Memory & Context Management with Claude Sonnet 4.5
-  description: Learn how to build AI agents that learn and improve across conversations
-    using Claude's memory tool and context editing capabilities.
+  description: Build AI agents with persistent memory using Claude's memory tool and
+    context editing.
   path: tool_use/memory_cookbook.ipynb
   category: tool_use
   authors:
   - Anthropic
   date: '2025-05-22'
 - title: Parallel tool calls on Claude 3.7 Sonnet
-  description: Claude 3.7 Sonnet may be less likely to make make parallel tool calls
-    in a response, even when you have not set `disable_parallel_tool_use`. To work
-    around this, we recommend introducing a "batch tool" that can act as a meta-tool
-    to wrap invocations ...
+  description: Enable parallel tool calls on Claude 3.7 Sonnet using batch tool meta-pattern
+    workaround.
   path: tool_use/parallel_tools_claude_3_7_sonnet.ipynb
   category: tool_use
   authors:
   - Anthropic
   date: '2025-03-05'
 - title: Tool choice
-  description: Tool use supports a parameter called `tool_choice` that allows you
-    to specify how you want Claude to call tools. In this notebook, we'll take a look
-    at how it works and when to use it. Before going any further, make sure you are
-    comfortable with the ...
+  description: Control how Claude selects tools using tool_choice parameter for forced
+    or auto selection.
   path: tool_use/tool_choice.ipynb
   category: tool_use
   authors:
   - alexalbertt
   date: '2024-05-15'
 - title: Note-Saving Tool with Pydantic and Anthropic Tool Use
-  description: In this example, we'll create a tool that saves a note with the author
-    and metadata, and use Pydantic to validate the model's response when calling the
-    tool. We'll define the necessary Pydantic models, process the tool call, and ensure
-    that the model...
+  description: Create validated tools using Pydantic models for type-safe Claude tool
+    use interactions.
   path: tool_use/tool_use_with_pydantic.ipynb
   category: tool_use
   authors:
   - alexalbertt
   date: '2024-04-12'
 - title: Using Vision with Tools
-  description: In this recipe, we'll demonstrate how to combine Vision with tool use
-    to analyze an image of a nutrition label and extract structured nutrition information
-    using a custom tool.
+  description: Combine Claude's vision with tools to extract structured data from images
+    like nutrition labels.
   path: tool_use/vision_with_tools.ipynb
   category: tool_use
   authors:
