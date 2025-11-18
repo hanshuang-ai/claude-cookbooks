@@ -26,7 +26,21 @@
       "categories": {
         "type": "array",
         "items": {
-          "type": "string"
+          "type": "string",
+          "enum": [
+            "Agent Patterns",
+            "Claude Agent SDK",
+            "Evals",
+            "Fine-Tuning",
+            "Images",
+            "Integrations",
+            "Observability",
+            "RAG & Retrieval",
+            "Responses",
+            "Skills",
+            "Thinking",
+            "Tools"
+          ]
         },
         "minItems": 1,
         "description": "Categories of the cookbook"
@@ -75,7 +89,7 @@
         "description": "Whether the cookbook is archived (optional, defaults to false)"
       }
     },
-    "required": ["title", "path", "slug", "categories", "github_url", "authors", "date"],
+    "required": ["title", "path", "categories", "authors", "date"],
     "additionalProperties": false
   }
 }

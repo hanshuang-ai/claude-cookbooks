@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=./.github/registry_schema.json
 - title: Prompting for Frontend Aesthetics
   description: Guide to prompting Claude for distinctive, polished frontend designs
     avoiding generic aesthetics.

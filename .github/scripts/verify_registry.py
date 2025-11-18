@@ -14,12 +14,21 @@ Commands:
     authors      Verify GitHub handles and author URLs only
     paths        Verify registry paths only
     registry     Verify registry authors exist in authors.yaml
+    schema       Verify YAML files match their JSON schemas
 """
 
 import yaml
 import requests
 import sys
+import json
 from pathlib import Path
+
+try:
+    from jsonschema import validate, ValidationError
+
+    HAS_JSONSCHEMA = True
+except ImportError:
+    HAS_JSONSCHEMA = False
 
 
 def check_github_handle(username):
@@ -38,7 +47,7 @@ def check_github_handle(username):
 def check_url(url):
     """Check if a URL is accessible."""
     # Skip x.com URLs as they block HEAD requests
-    if 'x.com' in url:
+    if "x.com" in url:
         return True, "skipped (x.com)"
 
     try:
@@ -64,7 +73,7 @@ def verify_authors(authors):
             failed_handles.append(f"{username} ({error})")
             print(f"  ❌ {error}")
         else:
-            print(f"  ✓ OK")
+            print("  ✓ OK")
 
     # Verify URLs
     print("\n=== Verifying Author URLs ===\n")
@@ -72,8 +81,8 @@ def verify_authors(authors):
         print(f"Checking URLs for {username}...")
 
         # Check website URL
-        if 'website' in details:
-            url = details['website']
+        if "website" in details:
+            url = details["website"]
             success, error = check_url(url)
             if not success:
                 failed_urls.append(f"{username}.website: {url} ({error})")
@@ -84,8 +93,8 @@ def verify_authors(authors):
                 print(f"  ✓ Website URL OK: {url}")
 
         # Check avatar URL
-        if 'avatar' in details:
-            url = details['avatar']
+        if "avatar" in details:
+            url = details["avatar"]
             success, error = check_url(url)
             if not success:
                 failed_urls.append(f"{username}.avatar: {url} ({error})")
@@ -105,8 +114,8 @@ def verify_registry_authors(registry, authors):
     print("\n=== Verifying Registry Authors ===\n")
     registry_authors = set()
     for entry in registry:
-        if 'authors' in entry:
-            for author in entry['authors']:
+        if "authors" in entry:
+            for author in entry["authors"]:
                 registry_authors.add(author)
 
     print(f"Found {len(registry_authors)} unique authors in registry.yaml")
@@ -129,10 +138,10 @@ def verify_paths(registry, repo_root):
     print(f"Found {len(registry)} cookbooks in registry.yaml")
 
     for entry in registry:
-        if 'path' in entry:
-            path = entry['path']
+        if "path" in entry:
+            path = entry["path"]
             full_path = repo_root / path
-            title = entry.get('title', 'Unknown')
+            title = entry.get("title", "Unknown")
 
             if not full_path.exists():
                 missing_paths.append(f"{path} (title: {title})")
@@ -140,17 +149,71 @@ def verify_paths(registry, repo_root):
             else:
                 print(f"  ✓ {path}")
         else:
-            missing_paths.append(f"Entry missing 'path' field (title: {entry.get('title', 'Unknown')})")
+            missing_paths.append(
+                f"Entry missing 'path' field (title: {entry.get('title', 'Unknown')})"
+            )
             print(f"  ❌ Entry missing 'path' field: {entry.get('title', 'Unknown')}")
 
     return missing_paths
+
+
+def verify_schemas(repo_root, authors, registry):
+    """Verify YAML files match their JSON schemas."""
+    if not HAS_JSONSCHEMA:
+        print("\n⚠️  Skipping schema validation (jsonschema not installed)")
+        return []
+
+    schema_errors = []
+
+    print("\n=== Verifying JSON Schemas ===\n")
+
+    # Verify authors.yaml against schema
+    authors_schema_path = repo_root / ".github" / "authors_schema.json"
+    if authors_schema_path.exists():
+        print("Checking authors.yaml against schema...")
+        try:
+            with open(authors_schema_path, "r") as f:
+                authors_schema = json.load(f)
+            validate(instance=authors, schema=authors_schema)
+            print("  ✓ authors.yaml matches schema")
+        except ValidationError as e:
+            schema_errors.append(f"authors.yaml: {e.message} at {'.'.join(str(p) for p in e.path)}")
+            print(f"  ❌ authors.yaml schema validation failed: {e.message}")
+        except json.JSONDecodeError as e:
+            schema_errors.append(f"authors_schema.json: Invalid JSON - {e}")
+            print(f"  ❌ authors_schema.json is invalid: {e}")
+    else:
+        print("  ⊘ authors_schema.json not found, skipping")
+
+    # Verify registry.yaml against schema
+    registry_schema_path = repo_root / ".github" / "registry_schema.json"
+    if registry_schema_path.exists():
+        print("\nChecking registry.yaml against schema...")
+        try:
+            with open(registry_schema_path, "r") as f:
+                registry_schema = json.load(f)
+            validate(instance=registry, schema=registry_schema)
+            print("  ✓ registry.yaml matches schema")
+        except ValidationError as e:
+            path_str = ".".join(str(p) for p in e.path) if e.path else "root"
+            schema_errors.append(f"registry.yaml: {e.message} at {path_str}")
+            print(f"  ❌ registry.yaml schema validation failed: {e.message}")
+            if e.path:
+                print(f"     at path: {path_str}")
+        except json.JSONDecodeError as e:
+            schema_errors.append(f"registry_schema.json: Invalid JSON - {e}")
+            print(f"  ❌ registry_schema.json is invalid: {e}")
+    else:
+        print("  ⊘ registry_schema.json not found, skipping")
+
+    return schema_errors
 
 
 def main():
     # Parse command line argument
     command = sys.argv[1] if len(sys.argv) > 1 else "all"
 
-    if command not in ["all", "authors", "paths", "registry"]:
+    if command not in ["all", "authors", "paths", "registry", "schema"]:
         print(f"Unknown command: {command}")
         print(__doc__)
         sys.exit(1)
@@ -163,12 +226,12 @@ def main():
     authors = None
     registry = None
 
-    if command in ["all", "authors", "registry"]:
-        with open(authors_path, 'r') as f:
+    if command in ["all", "authors", "registry", "schema"]:
+        with open(authors_path, "r") as f:
             authors = yaml.safe_load(f)
 
-    if command in ["all", "paths", "registry"]:
-        with open(registry_path, 'r') as f:
+    if command in ["all", "paths", "registry", "schema"]:
+        with open(registry_path, "r") as f:
             registry = yaml.safe_load(f)
 
     # Run verifications based on command
@@ -176,6 +239,7 @@ def main():
     failed_urls = []
     missing_authors = []
     missing_paths = []
+    schema_errors = []
 
     if command in ["all", "authors"]:
         failed_handles, failed_urls = verify_authors(authors)
@@ -185,6 +249,9 @@ def main():
 
     if command in ["all", "paths"]:
         missing_paths = verify_paths(registry, repo_root)
+
+    if command in ["all", "schema"]:
+        schema_errors = verify_schemas(repo_root, authors, registry)
 
     # Report results
     has_failures = False
@@ -211,6 +278,12 @@ def main():
         print("\n❌ The following paths in registry.yaml do not exist:")
         for path in missing_paths:
             print(f"  - {path}")
+        has_failures = True
+
+    if schema_errors:
+        print("\n❌ The following schema validation errors occurred:")
+        for error in schema_errors:
+            print(f"  - {error}")
         has_failures = True
 
     if has_failures:
