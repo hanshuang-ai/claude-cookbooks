@@ -232,7 +232,7 @@
   - alexalbertt
   date: '2024-05-08'
   categories:
-  - Images
+  - Multimodal
 - title: Getting started - how to pass images into Claude
   description: Tutorial on passing images to Claude 3 API for vision-based text analysis.
   path: multimodal/getting_started_with_vision.ipynb
@@ -240,7 +240,7 @@
   - alexalbertt
   date: '2024-03-03'
   categories:
-  - Images
+  - Multimodal
 - title: How to transcribe documents with Claude
   description: Extract and structure unstructured text from images and PDFs using
     Claude 3's vision.
@@ -249,7 +249,7 @@
   - alexalbertt
   date: '2024-03-03'
   categories:
-  - Images
+  - Multimodal
 - title: Working with Charts, Graphs, and Slide Decks
   description: Extract insights from charts, graphs, and presentations using Claude's
     vision analysis capabilities.
@@ -258,7 +258,7 @@
   - alexalbertt
   date: '2024-03-03'
   categories:
-  - Images
+  - Multimodal
 - title: Using Haiku as a sub-agent
   description: Analyze financial reports using Haiku sub-agents for extraction and
     Opus for synthesis.
@@ -521,5 +521,5 @@
   - alexalbertt
   date: '2024-05-15'
   categories:
-  - Images
+  - Multimodal
   - Tools
