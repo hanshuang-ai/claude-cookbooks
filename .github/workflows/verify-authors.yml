@@ -30,4 +30,4 @@ jobs:
 
       - name: Verify authors and registry
         run: |
-          python .github/scripts/verify_authors.py
+          python .github/scripts/verify_registry.py

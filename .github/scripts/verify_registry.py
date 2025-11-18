@@ -4,6 +4,16 @@ Verify authors.yaml and registry.yaml integrity:
 1. GitHub handles exist
 2. Website and avatar URLs are valid
 3. All registry.yaml authors are defined in authors.yaml
+4. All registry.yaml paths exist
+
+Usage:
+    python verify_registry.py [command]
+
+Commands:
+    all          Run all verifications (default)
+    authors      Verify GitHub handles and author URLs only
+    paths        Verify registry paths only
+    registry     Verify registry authors exist in authors.yaml
 """
 
 import yaml
@@ -40,22 +50,12 @@ def check_url(url):
         return False, str(e)
 
 
-def main():
-    # Load YAML files
-    authors_path = Path(__file__).parent.parent.parent / "authors.yaml"
-    registry_path = Path(__file__).parent.parent.parent / "registry.yaml"
-
-    with open(authors_path, 'r') as f:
-        authors = yaml.safe_load(f)
-
-    with open(registry_path, 'r') as f:
-        registry = yaml.safe_load(f)
-
+def verify_authors(authors):
+    """Verify GitHub handles and author URLs."""
     failed_handles = []
     failed_urls = []
-    missing_authors = []
 
-    # Step 1: Verify GitHub handles
+    # Verify GitHub handles
     print("=== Verifying GitHub Handles ===\n")
     for username in authors.keys():
         print(f"Checking GitHub handle: {username}...")
@@ -66,7 +66,7 @@ def main():
         else:
             print(f"  ✓ OK")
 
-    # Step 2: Verify URLs
+    # Verify URLs
     print("\n=== Verifying Author URLs ===\n")
     for username, details in authors.items():
         print(f"Checking URLs for {username}...")
@@ -95,7 +95,13 @@ def main():
             else:
                 print(f"  ✓ Avatar URL OK: {url}")
 
-    # Step 3: Verify registry authors exist in authors.yaml
+    return failed_handles, failed_urls
+
+
+def verify_registry_authors(registry, authors):
+    """Verify registry authors exist in authors.yaml."""
+    missing_authors = []
+
     print("\n=== Verifying Registry Authors ===\n")
     registry_authors = set()
     for entry in registry:
@@ -111,6 +117,74 @@ def main():
             print(f"  ❌ Author '{author}' not found in authors.yaml")
         else:
             print(f"  ✓ {author}")
+
+    return missing_authors
+
+
+def verify_paths(registry, repo_root):
+    """Verify registry paths exist."""
+    missing_paths = []
+
+    print("\n=== Verifying Registry Paths ===\n")
+    print(f"Found {len(registry)} cookbooks in registry.yaml")
+
+    for entry in registry:
+        if 'path' in entry:
+            path = entry['path']
+            full_path = repo_root / path
+            title = entry.get('title', 'Unknown')
+
+            if not full_path.exists():
+                missing_paths.append(f"{path} (title: {title})")
+                print(f"  ❌ Path not found: {path}")
+            else:
+                print(f"  ✓ {path}")
+        else:
+            missing_paths.append(f"Entry missing 'path' field (title: {entry.get('title', 'Unknown')})")
+            print(f"  ❌ Entry missing 'path' field: {entry.get('title', 'Unknown')}")
+
+    return missing_paths
+
+
+def main():
+    # Parse command line argument
+    command = sys.argv[1] if len(sys.argv) > 1 else "all"
+
+    if command not in ["all", "authors", "paths", "registry"]:
+        print(f"Unknown command: {command}")
+        print(__doc__)
+        sys.exit(1)
+
+    # Load YAML files
+    repo_root = Path(__file__).parent.parent.parent
+    authors_path = repo_root / "authors.yaml"
+    registry_path = repo_root / "registry.yaml"
+
+    authors = None
+    registry = None
+
+    if command in ["all", "authors", "registry"]:
+        with open(authors_path, 'r') as f:
+            authors = yaml.safe_load(f)
+
+    if command in ["all", "paths", "registry"]:
+        with open(registry_path, 'r') as f:
+            registry = yaml.safe_load(f)
+
+    # Run verifications based on command
+    failed_handles = []
+    failed_urls = []
+    missing_authors = []
+    missing_paths = []
+
+    if command in ["all", "authors"]:
+        failed_handles, failed_urls = verify_authors(authors)
+
+    if command in ["all", "registry"]:
+        missing_authors = verify_registry_authors(registry, authors)
+
+    if command in ["all", "paths"]:
+        missing_paths = verify_paths(registry, repo_root)
 
     # Report results
     has_failures = False
@@ -131,6 +205,12 @@ def main():
         print("\n❌ The following authors are in registry.yaml but not in authors.yaml:")
         for author in missing_authors:
             print(f"  - {author}")
+        has_failures = True
+
+    if missing_paths:
+        print("\n❌ The following paths in registry.yaml do not exist:")
+        for path in missing_paths:
+            print(f"  - {path}")
         has_failures = True
 
     if has_failures:

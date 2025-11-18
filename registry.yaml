@@ -56,7 +56,7 @@
 - title: 00 - The One-Liner Research Agent
   description: Build a research agent using Claude Code SDK with WebSearch for autonomous
     research.
-  path: claude_code_sdk/00_The_one_liner_research_agent.ipynb
+  path: claude_agent_sdk/00_The_one_liner_research_agent.ipynb
   authors:
   - JiriDeJonghe
   date: '2025-09-12'
@@ -65,7 +65,7 @@
 - title: 01 - The Chief of Staff Agent
   description: Build multi-agent systems with subagents, hooks, output styles, and
     plan mode features.
-  path: claude_code_sdk/01_The_chief_of_staff_agent.ipynb
+  path: claude_agent_sdk/01_The_chief_of_staff_agent.ipynb
   authors:
   - JiriDeJonghe
   date: '2025-09-12'
@@ -74,7 +74,7 @@
 - title: 02 - The Observability Agent
   description: Connect agents to external systems via MCP servers for GitHub monitoring
     and CI workflows.
-  path: claude_code_sdk/02_The_observability_agent.ipynb
+  path: claude_agent_sdk/02_The_observability_agent.ipynb
   authors:
   - JiriDeJonghe
   date: '2025-09-12'
@@ -159,24 +159,6 @@
   authors:
   - alexalbertt
   date: '2024-03-03'
-  categories:
-  - RAG & Retrieval
-- title: Illustrated Responses with Claude
-  description: Create Claude responses illustrated with images using Stable Diffusion
-    API tool integration.
-  path: misc/illustrated_responses.ipynb
-  authors:
-  - alexalbertt
-  date: '2024-03-03'
-  categories:
-  - Responses
-- title: Experimentally Testing Claude's Long-Context QA Abilities
-  description: Legacy notebook testing Claude 2's long-context question answering
-    performance and evaluation methods.
-  path: misc/mc_qa.ipynb
-  authors:
-  - Anthropic
-  date: '2023-08-15'
   categories:
   - RAG & Retrieval
 - title: Metaprompt
@@ -506,7 +488,7 @@
 - title: Parallel tool calls on Claude 3.7 Sonnet
   description: Enable parallel tool calls on Claude 3.7 Sonnet using batch tool meta-pattern
     workaround.
-  path: tool_use/parallel_tools_claude_3_7_sonnet.ipynb
+  path: tool_use/parallel_tools.ipynb
   authors:
   - Anthropic
   date: '2025-03-05'
