@@ -1,4 +1,4 @@
-- title: Prompting for Frontend Aesthethics
+- title: Prompting for Frontend Aesthetics
   description: Guide to prompting Claude for distinctive, polished frontend designs
     avoiding generic aesthetics.
   path: coding/prompting_for_frontend_aesthetics.ipynb
@@ -6,7 +6,8 @@
   - rgb-prithvi
   date: '2025-10-21'
   categories:
-  - Frontend
+  - Responses
+  - Skills
 - title: Classification with Claude
   description: Build classification systems with Claude using RAG and chain-of-thought
     for insurance tickets.
@@ -15,7 +16,7 @@
   - GarvanD
   date: '2024-05-19'
   categories:
-  - capabilities
+  - RAG & Retrieval
 - title: Enhancing RAG with Contextual Retrieval
   description: Improve RAG accuracy by adding context to chunks before embedding with
     prompt caching.
@@ -24,7 +25,7 @@
   - Anthropic
   date: '2024-09-13'
   categories:
-  - capabilities
+  - RAG & Retrieval
 - title: Retrieval Augmented Generation
   description: Build and optimize RAG systems with Claude using summary indexing and
     reranking techniques.
@@ -33,7 +34,7 @@
   - Anthropic
   date: '2024-07-02'
   categories:
-  - capabilities
+  - RAG & Retrieval
 - title: Summarization with Claude
   description: Comprehensive guide to summarizing legal documents with evaluation
     and advanced techniques.
@@ -42,7 +43,7 @@
   - Briiick
   date: '2024-08-07'
   categories:
-  - capabilities
+  - RAG & Retrieval
 - title: Text to SQL with Claude
   description: Convert natural language queries to SQL using RAG, chain-of-thought,
     and self-improvement techniques.
@@ -51,7 +52,7 @@
   - maheshmurag
   date: '2024-09-23'
   categories:
-  - capabilities
+  - RAG & Retrieval
 - title: 00 - The One-Liner Research Agent
   description: Build a research agent using Claude Code SDK with WebSearch for autonomous
     research.
@@ -60,7 +61,7 @@
   - JiriDeJonghe
   date: '2025-09-12'
   categories:
-  - claude_code_sdk
+  - Claude Agent SDK
 - title: 01 - The Chief of Staff Agent
   description: Build multi-agent systems with subagents, hooks, output styles, and
     plan mode features.
@@ -69,7 +70,7 @@
   - JiriDeJonghe
   date: '2025-09-12'
   categories:
-  - claude_code_sdk
+  - Claude Agent SDK
 - title: 02 - The Observability Agent
   description: Connect agents to external systems via MCP servers for GitHub monitoring
     and CI workflows.
@@ -78,7 +79,7 @@
   - JiriDeJonghe
   date: '2025-09-12'
   categories:
-  - claude_code_sdk
+  - Claude Agent SDK
 - title: Extended Thinking
   description: Use Claude's extended thinking for transparent step-by-step reasoning
     with budget management.
@@ -87,7 +88,7 @@
   - alexalbertt
   date: '2025-02-24'
   categories:
-  - extended_thinking
+  - Thinking
 - title: Extended Thinking with Tool Use
   description: Combine extended thinking with tools for transparent reasoning during
     multi-step workflows.
@@ -96,7 +97,7 @@
   - alexalbertt
   date: '2025-02-24'
   categories:
-  - extended_thinking
+  - Thinking
 - title: Finetuning Claude 3 Haiku on Bedrock
   description: Step-by-step guide to finetuning Claude 3 Haiku on Amazon Bedrock for
     custom tasks.
@@ -105,7 +106,7 @@
   - davidhershey
   date: '2024-08-19'
   categories:
-  - finetuning
+  - Fine-Tuning
 - title: Batch Processing with Message Batches API
   description: Process large volumes of Claude requests asynchronously with 50% cost
     reduction using batches.
@@ -114,7 +115,7 @@
   - alexalbertt
   date: '2024-10-08'
   categories:
-  - misc
+  - Responses
 - title: Building Evals
   description: Build robust evaluation systems to measure and improve Claude's performance
     on key metrics.
@@ -123,7 +124,7 @@
   - alexalbertt
   date: '2024-03-03'
   categories:
-  - misc
+  - Evals
 - title: Building a moderation filter with Claude
   description: Build customizable content moderation filters by defining rules and
     categories in prompts.
@@ -132,7 +133,7 @@
   - alexalbertt
   date: '2024-03-03'
   categories:
-  - misc
+  - Responses
 - title: Generate Synthetic Test Data for Your Prompt Template
   description: Generate synthetic test cases to evaluate and improve your Claude prompt
     templates effectively.
@@ -141,7 +142,7 @@
   - Anthropic
   date: '2024-08-16'
   categories:
-  - misc
+  - Evals
 - title: Prompting Claude for "JSON Mode"
   description: Get reliable JSON output from Claude using effective prompting techniques
     without constrained sampling.
@@ -150,7 +151,7 @@
   - alexalbertt
   date: '2024-03-03'
   categories:
-  - misc
+  - Responses
 - title: How to make SQL queries with Claude
   description: Generate SQL queries from natural language questions using Claude with
     database schema context.
@@ -159,7 +160,7 @@
   - alexalbertt
   date: '2024-03-03'
   categories:
-  - misc
+  - RAG & Retrieval
 - title: Illustrated Responses with Claude
   description: Create Claude responses illustrated with images using Stable Diffusion
     API tool integration.
@@ -168,7 +169,7 @@
   - alexalbertt
   date: '2024-03-03'
   categories:
-  - misc
+  - Responses
 - title: Experimentally Testing Claude's Long-Context QA Abilities
   description: Legacy notebook testing Claude 2's long-context question answering
     performance and evaluation methods.
@@ -177,7 +178,7 @@
   - Anthropic
   date: '2023-08-15'
   categories:
-  - misc
+  - RAG & Retrieval
 - title: Metaprompt
   description: Prompt engineering tool that generates starting prompts for your tasks
     to solve blank-page problem.
@@ -186,7 +187,7 @@
   - Anthropic
   date: '2024-03-18'
   categories:
-  - misc
+  - Responses
 - title: '"Uploading" PDFs to Claude Via the API'
   description: Process and summarize PDF documents using Claude API with text extraction
     and encoding.
@@ -195,7 +196,7 @@
   - Anthropic
   date: '2023-08-15'
   categories:
-  - misc
+  - RAG & Retrieval
 - title: Prompt caching through the Claude API
   description: Cache and reuse prompt context for cost savings and faster responses
     with detailed instructions.
@@ -204,7 +205,7 @@
   - alexalbertt
   date: '2024-08-14'
   categories:
-  - misc
+  - Responses
 - title: Summarizing Web Page Content with Claude 3 Haiku
   description: Fetch and summarize web page content using Claude 3 Haiku via URL extraction.
   path: misc/read_web_pages_with_haiku.ipynb
@@ -212,7 +213,7 @@
   - alexalbertt
   date: '2024-03-13'
   categories:
-  - misc
+  - RAG & Retrieval
 - title: Sampling Responses from Claude Beyond the Max Tokens Limit
   description: Generate longer responses beyond max_tokens limit using prefill technique
     with message continuation.
@@ -221,7 +222,7 @@
   - Anthropic
   date: '2024-05-08'
   categories:
-  - misc
+  - Responses
 - title: Speculative Prompt Caching
   description: Reduce time-to-first-token by warming cache speculatively while users
     formulate their queries.
@@ -230,7 +231,7 @@
   - Anthropic
   date: '2025-05-15'
   categories:
-  - misc
+  - Responses
 - title: Citations
   description: Enable Claude to provide detailed source citations when answering document-based
     questions for verification.
@@ -239,7 +240,7 @@
   - Anthropic
   date: '2024-03-14'
   categories:
-  - misc
+  - Responses
 - title: Best practices for using vision with Claude
   description: Tips and techniques for optimal image processing performance with Claude's
     vision capabilities.
@@ -248,7 +249,7 @@
   - alexalbertt
   date: '2024-05-08'
   categories:
-  - multimodal
+  - Images
 - title: Getting started - how to pass images into Claude
   description: Tutorial on passing images to Claude 3 API for vision-based text analysis.
   path: multimodal/getting_started_with_vision.ipynb
@@ -256,7 +257,7 @@
   - alexalbertt
   date: '2024-03-03'
   categories:
-  - multimodal
+  - Images
 - title: How to transcribe documents with Claude
   description: Extract and structure unstructured text from images and PDFs using
     Claude 3's vision.
@@ -265,7 +266,7 @@
   - alexalbertt
   date: '2024-03-03'
   categories:
-  - multimodal
+  - Images
 - title: Working with Charts, Graphs, and Slide Decks
   description: Extract insights from charts, graphs, and presentations using Claude's
     vision analysis capabilities.
@@ -274,7 +275,7 @@
   - alexalbertt
   date: '2024-03-03'
   categories:
-  - multimodal
+  - Images
 - title: Using Haiku as a sub-agent
   description: Analyze financial reports using Haiku sub-agents for extraction and
     Opus for synthesis.
@@ -283,7 +284,7 @@
   - alexalbertt
   date: '2024-03-13'
   categories:
-  - multimodal
+  - Agent Patterns
 - title: Usage & Cost Admin API Cookbook
   description: Programmatically access and analyze your Claude API usage and cost
     data via Admin API.
@@ -292,7 +293,7 @@
   - Anthropic
   date: '2025-08-18'
   categories:
-  - observability
+  - Observability
 - title: Basic Workflows
   description: Three simple multi-LLM workflow patterns trading cost or latency for
     improved performance.
@@ -301,7 +302,7 @@
   - Anthropic
   date: '2024-12-19'
   categories:
-  - patterns
+  - Agent Patterns
 - title: Evaluator Optimizer
   description: Workflow pattern using one LLM for generation and another for evaluation
     feedback loop.
@@ -310,7 +311,7 @@
   - Anthropic
   date: '2024-12-19'
   categories:
-  - patterns
+  - Agent Patterns
 - title: Orchestrator Workers
   description: Central LLM dynamically delegates tasks to worker LLMs and synthesizes
     their combined results.
@@ -319,7 +320,7 @@
   - Anthropic
   date: '2024-12-19'
   categories:
-  - patterns
+  - Agent Patterns
 - title: Introduction to Claude Skills
   description: Create documents, analyze data, automate workflows with Claude's Excel,
     PowerPoint, PDF skills.
@@ -328,7 +329,7 @@
   - Anthropic
   date: '2025-10-14'
   categories:
-  - skills
+  - Skills
 - title: Claude Skills for Financial Applications
   description: Build financial dashboards and portfolio analytics using Claude's Excel,
     PowerPoint, PDF skills.
@@ -337,7 +338,7 @@
   - Anthropic
   date: '2025-10-15'
   categories:
-  - skills
+  - Skills
 - title: Building Custom Skills for Claude
   description: Create, deploy, and manage custom skills extending Claude with specialized
     organizational workflows.
@@ -346,17 +347,17 @@
   - Anthropic
   date: '2025-10-15'
   categories:
-  - skills
+  - Skills
 - title: Transcribe an audio file with Deepgram & use Anthropic to prepare interview
     questions!
   description: Transcribe audio with Deepgram and generate interview questions using
     Claude for preparation.
   path: third_party/Deepgram/prerecorded_audio.ipynb
   authors:
-  - john-vajda
+  - jpvajda
   date: '2024-04-10'
   categories:
-  - third_party
+  - Integrations
 - title: RAG Pipeline with LlamaIndex
   description: Build basic RAG pipeline with LlamaIndex for document retrieval and
     question answering.
@@ -365,7 +366,7 @@
   - ravi03071991
   date: '2024-03-01'
   categories:
-  - third_party
+  - Integrations
 - title: Multi-Document Agents
   description: Build RAG for large document collections using DocumentAgents with
     ReAct Agent pattern.
@@ -374,7 +375,7 @@
   - ravi03071991
   date: '2024-03-02'
   categories:
-  - third_party
+  - Integrations
 - title: Multi-Modal
   description: Use LlamaIndex's Anthropic MultiModal LLM abstraction for image understanding
     and reasoning.
@@ -383,7 +384,7 @@
   - ravi03071991
   date: '2024-03-08'
   categories:
-  - third_party
+  - Integrations
 - title: ReAct Agent
   description: Create ReAct agents with LlamaIndex for tool-based reasoning and action
     workflows.
@@ -392,7 +393,7 @@
   - ravi03071991
   date: '2024-03-02'
   categories:
-  - third_party
+  - Integrations
 - title: RouterQuery Engine
   description: Route queries to different indices using LlamaIndex RouterQueryEngine
     for multi-document search.
@@ -401,7 +402,7 @@
   - ravi03071991
   date: '2024-03-01'
   categories:
-  - third_party
+  - Integrations
 - title: SubQuestionQueryEngine
   description: Decompose complex queries into sub-questions across multiple documents
     using LlamaIndex engine.
@@ -410,16 +411,16 @@
   - ravi03071991
   date: '2024-03-01'
   categories:
-  - third_party
+  - Integrations
 - title: How to Build A RAG System Using Claude 3 And MongoDB
   description: Build chatbot RAG system with Claude and MongoDB using tech news as
     knowledge base.
   path: third_party/MongoDB/rag_using_mongodb.ipynb
   authors:
-  - richmond-alake
+  - RichmondAlake
   date: '2024-03-06'
   categories:
-  - third_party
+  - Integrations
 - title: Claude 3 RAG Agents with LangChain v1
   description: Build RAG agents with Claude 3 using LangChain v1's updated agent framework
     patterns.
@@ -428,7 +429,7 @@
   - james-briggs
   date: '2024-03-14'
   categories:
-  - third_party
+  - Integrations
 - title: Retrieval-Augmented Generation using Pinecone
   description: Connect Claude with Pinecone vector database for retrieval-augmented
     generation and semantic search.
@@ -437,7 +438,7 @@
   - alexalbertt
   date: '2024-02-18'
   categories:
-  - third_party
+  - Integrations
 - title: Iteratively Searching Wikipedia with Claude
   description: Legacy notebook showing iterative Wikipedia searches with Claude 2
     for research workflows.
@@ -446,7 +447,7 @@
   - Anthropic
   date: '2023-08-15'
   categories:
-  - third_party
+  - Integrations
 - title: Using the Wolfram Alpha LLM API as a Tool with Claude
   description: Integrate Wolfram Alpha LLM API as Claude tool for computational queries
     and answers.
@@ -455,7 +456,7 @@
   - alexalbertt
   date: '2024-04-03'
   categories:
-  - third_party
+  - Integrations
 - title: Tool Evaluation
   description: Run parallel agent evaluations on tools independently from evaluation
     task files.
@@ -464,7 +465,7 @@
   - Anthropic
   date: '2025-09-10'
   categories:
-  - tool_evaluation
+  - Evals
 - title: Using a Calculator Tool with Claude
   description: Provide Claude with calculator tool for arithmetic operations and mathematical
     problem solving.
@@ -473,7 +474,7 @@
   - alexalbertt
   date: '2024-04-03'
   categories:
-  - tool_use
+  - Tools
 - title: Creating a Customer Service Agent with Client-Side Tools
   description: Build customer service chatbot with Claude using tools for customer
     lookup and order management.
@@ -482,7 +483,7 @@
   - alexalbertt
   date: '2024-04-03'
   categories:
-  - tool_use
+  - Tools
 - title: Extracting Structured JSON using Claude and Tool Use
   description: Extract structured JSON data from various inputs using Claude's tool
     use capabilities.
@@ -491,7 +492,8 @@
   - alexalbertt
   date: '2024-04-03'
   categories:
-  - tool_use
+  - Responses
+  - Tools
 - title: Memory & Context Management with Claude Sonnet 4.5
   description: Build AI agents with persistent memory using Claude's memory tool and
     context editing.
@@ -500,7 +502,7 @@
   - Anthropic
   date: '2025-05-22'
   categories:
-  - tool_use
+  - Tools
 - title: Parallel tool calls on Claude 3.7 Sonnet
   description: Enable parallel tool calls on Claude 3.7 Sonnet using batch tool meta-pattern
     workaround.
@@ -509,7 +511,7 @@
   - Anthropic
   date: '2025-03-05'
   categories:
-  - tool_use
+  - Tools
 - title: Tool choice
   description: Control how Claude selects tools using tool_choice parameter for forced
     or auto selection.
@@ -518,7 +520,7 @@
   - alexalbertt
   date: '2024-05-15'
   categories:
-  - tool_use
+  - Tools
 - title: Note-Saving Tool with Pydantic and Anthropic Tool Use
   description: Create validated tools using Pydantic models for type-safe Claude tool
     use interactions.
@@ -527,7 +529,7 @@
   - alexalbertt
   date: '2024-04-12'
   categories:
-  - tool_use
+  - Tools
 - title: Using Vision with Tools
   description: Combine Claude's vision with tools to extract structured data from
     images like nutrition labels.
@@ -536,4 +538,5 @@
   - alexalbertt
   date: '2024-05-15'
   categories:
-  - tool_use
+  - Images
+  - Tools
