@@ -1,0 +1,81 @@
+name: Verify Authors URLs
+
+on:
+  pull_request:
+    paths:
+      - 'authors.yaml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'authors.yaml'
+
+jobs:
+  verify-urls:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml requests
+
+      - name: Verify author URLs
+        run: |
+          python - <<'EOF'
+          import yaml
+          import requests
+          import sys
+          from urllib.parse import urlparse
+
+          # Load authors.yaml
+          with open('authors.yaml', 'r') as f:
+              authors = yaml.safe_load(f)
+
+          failed_urls = []
+
+          for username, details in authors.items():
+              print(f"Checking URLs for {username}...")
+
+              # Check website URL if present
+              if 'website' in details:
+                  url = details['website']
+                  try:
+                      response = requests.head(url, timeout=10, allow_redirects=True)
+                      if response.status_code >= 400:
+                          failed_urls.append(f"{username}.website: {url} (HTTP {response.status_code})")
+                          print(f"  ❌ Website URL failed: {url} (HTTP {response.status_code})")
+                      else:
+                          print(f"  ✓ Website URL OK: {url}")
+                  except requests.RequestException as e:
+                      failed_urls.append(f"{username}.website: {url} ({str(e)})")
+                      print(f"  ❌ Website URL failed: {url} ({str(e)})")
+
+              # Check avatar URL if present
+              if 'avatar' in details:
+                  url = details['avatar']
+                  try:
+                      response = requests.head(url, timeout=10, allow_redirects=True)
+                      if response.status_code >= 400:
+                          failed_urls.append(f"{username}.avatar: {url} (HTTP {response.status_code})")
+                          print(f"  ❌ Avatar URL failed: {url} (HTTP {response.status_code})")
+                      else:
+                          print(f"  ✓ Avatar URL OK: {url}")
+                  except requests.RequestException as e:
+                      failed_urls.append(f"{username}.avatar: {url} ({str(e)})")
+                      print(f"  ❌ Avatar URL failed: {url} ({str(e)})")
+
+          if failed_urls:
+              print("\n❌ The following URLs failed verification:")
+              for url in failed_urls:
+                  print(f"  - {url}")
+              sys.exit(1)
+          else:
+              print("\n✓ All URLs verified successfully!")
+          EOF

@@ -23,9 +23,13 @@
         "pattern": "^[a-z0-9-]+$",
         "description": "URL-friendly slug for the cookbook"
       },
-      "category": {
-        "type": "string",
-        "description": "Category of the cookbook"
+      "categories": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1,
+        "description": "Categories of the cookbook"
       },
       "github_url": {
         "type": "string",
@@ -65,9 +69,13 @@
       "thumbnail": {
         "type": "string",
         "description": "Thumbnail image URL (optional)"
+      },
+      "archived": {
+        "type": "boolean",
+        "description": "Whether the cookbook is archived (optional, defaults to false)"
       }
     },
-    "required": ["title", "path", "slug", "category", "github_url", "authors", "date"],
+    "required": ["title", "path", "slug", "categories", "github_url", "authors", "date"],
     "additionalProperties": false
   }
 }
